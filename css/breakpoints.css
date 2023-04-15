@@ -1,0 +1,68 @@
+@media screen {                            /* Para qualquer tamanho de tela */
+    #titulo_pag{
+        font-size: 180%;
+        line-height: 50px;
+        text-align: center;
+        line-height: 90px;
+    }
+    #logo {
+        width: 16%;
+        height: auto;
+    }
+    #navegacao #lista_navegacao li{
+        margin-bottom: 1.2px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    #logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:649px) {
+
+    #logo {
+        width: 16%;
+        height: auto;
+    }
+    #lista_navegacao{
+        display: block;
+    }
+    #rodape td{
+      min-width: 160px;
+    }                  
+    .rotulo, .insercao, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }                                                               
+}
+
+@media screen and (min-width:650px) {
+    #lista_navegacao{
+        display: flex;
+    }
+    #navegacao{
+        position: sticky;
+        top: 0;
+    }
+    #navegacao #lista_navegacao li{
+        width: calc(100%/4);
+    }
+    #rodape td{           /* Inclusão do Rodapé. */
+    min-width: 225px;
+    }
+}
+
+@media screen and (min-width:980px) {
+    #titulo_pag{
+        font-size: 200%;
+    }
+    #logo{
+        max-width: 100px;
+    }
+    #lista_navegacao{
+        justify-content: flex-end;
+    }
+}

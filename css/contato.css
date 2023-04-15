@@ -1,0 +1,70 @@
+div#contato{
+    border: 5px solid #E07918;
+    background-color: #313537;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+div#contato > form{
+    margin: 35px;
+    padding: 10px;
+    
+}
+legend{
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1.9px -2.3px 3px #000;
+}
+
+form > fieldset{
+    background-color: rgb(79 79 79);
+    align-content: center;
+    padding: 15px;
+}
+
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #e07918;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.rotulo {
+float: left;
+width: 100%;
+margin-top: 6px;
+}
+
+.insercao {
+float: left;
+width: 100%;
+margin-top: 6px;
+}
+
+.linha:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 5px 0 5px 0;
+}

@@ -1,0 +1,42 @@
+#logo_bsd{
+    display: block;
+    margin: 15px auto;
+    width: 20%;
+    max-width: 30%;
+    height: auto;
+    transition: width 1.2s;
+  }   #logo_bsd:hover{
+      width: 70%;
+}
+
+#ilustracoes{
+    background-color: rgb(49, 53, 55);
+    border: 2px solid rgb(235,136,15);
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+  }
+  #ilustracoes > figure{
+    min-width: 500px;
+    width: 200%;
+    max-width: 500%;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;;
+  } figure img{
+    width: 65%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 8px;;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+ 

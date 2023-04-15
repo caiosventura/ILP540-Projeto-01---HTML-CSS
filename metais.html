@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/breakpoints.css">
+	<!-- Para elementos dessa página. -->
+	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Piazzolla:ital,wght@1,200&display=swap"
+	 rel="stylesheet">
+	<title>Projeto 01</title>
+</head>
+
+
+<body>
+	<!-- Início do body: corpo principal do site, que contém toda a estrutura + conteúdo.. -->
+	<div class="grid">
+		<!-- Div utilizada como a grade (grid) na qual os outros elementos estarão contidos. -->
+
+
+
+		<header id="cabecalho" class="grid-item">
+			<!-- Cabeçalho: para incluir informação do título e o logo do nosso site. -->
+			<h1 id="titulo_pag"> Orquestra
+				<img id="logo" src="imagens/violino3.png" alt="Violino">
+                </h1>
+            </header>
+
+
+
+
+
+            <nav id="navegacao" class="grid-item">                  <!-- Menu de navegação: possibilita o usuário de navegar pelas páginas do site. -->
+                <ul id="lista_navegacao">    <!-- Lista que compõe os itens do navbar. -->
+                    <li>    <a href="index.html">Home</a>         </li> <!-- Item da lista. -->
+                    <li>    <a href="madeiras.html">Madeiras</a>  </li> <!-- Item da lista. -->
+                    <li>    <a href="#">Metais</a>                </li> <!-- Item da lista. -->
+                    <li>    <a href="cordas.html">Cordas</a>      </li> <!-- Item da lista. -->
+                    <li>    <a href="contato.html">Contato</a>    </li> <!-- Item da lista. -->
+                </ul>
+            </nav>
+
+
+
+
+
+            <section id="principal" class="grid-item">                  <!-- Seção principal do site: contém os artigos principais. -->
+                <article> <!-- Artigo que contém conteúdo. -->
+                    <h2>Instrumentos de Metal</h2>
+                    <p> Os instrumentos de metal das modernas orquestras sinfônicas como os da Osesp, todos eles de sopro, ocupam a última fileira. Ficam lá no fundo, porque são os de sonoridades mais fortes e penetrantes do aparato sinfônico. Onde estão localizados, correm menos risco de encobrir os colegas localizados à sua frente, que têm emissão sonora mais fraca — as cordas e as madeiras. </p>
+                    <p> Levando em conta o aspecto do tubo, esses instrumentos costumam ser divididos em três grupos: os de tubo longo e cônico (a trompa), os de tubo longo e cilíndrico (o trompete e o trombone) e os de tubo curto e cônico (a tuba). Eles são os integrantes fixos da poderosa família dos metais, de presença sempre brilhante nas grandes orquestras, onde fazem ouvir suas sonoridades suntuosas.</p>
+                </article><br>
+                <article>
+                    <iframe class="iframe_q" width="560" height="315" src="https://www.youtube.com/embed/4PmHuqy6DtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+                <article id="lst_conteudo">
+                  <ul id="lst_ver" style="list-style-type: disc;"><h2>Outros Instrumentos</h2>
+                    <li class="lst_ver_item">Trompa: saiba mais <a href="https://www.youtube.com/watch?v=MeGzP9nuz0I&list=PLdY4sOsWnMgk0u2fkPXeC7EmHXbrAF-Ll&index=8" target="_blank" class="artigo1_conteudo">aqui</a>; </li>
+                    <li class="lst_ver_item">Trompete: saiba mais <a href="https://www.youtube.com/watch?v=Dx4eGwhFd_Y&list=PLdY4sOsWnMgk0u2fkPXeC7EmHXbrAF-Ll&index=4" target="_blank" class="artigo1_conteudo">aqui</a>; </li>
+                    <li class="lst_ver_item">Tuba: saiba mais <a href="https://www.youtube.com/watch?v=tonaGFKYQ7E&list=PLdY4sOsWnMgk0u2fkPXeC7EmHXbrAF-Ll&index=22" target="_blank" class="artigo1_conteudo">aqui</a>. </li>
+                  </ul>
+                </article>
+
+            </section>
+
+
+
+              <aside id="sidebar" class="grid-item">                      <!-- Menu aside: contém links para navegar pelos artigos. -->
+                <ul id="menu_aside" class="menu_nav">   <!-- Menu aside em formato de lista. -->
+                    <li>Artigos Mais lidos</li>     <!-- Titulo da Lista -->
+                    <li>A Sala São Paulo</li>            <!-- Item da lista. -->
+                    <li class="artigo">Artigo 1</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 2</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 3</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 4</li>     <!-- Item da lista. -->
+                    <li>Orquestra OSESP</li>             <!-- Item da lista. -->
+                    <li class="artigo">Artigo 1</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 2</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 3</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 4</li>     <!-- Item da lista. -->
+                </ul>
+            </aside>
+
+
+
+
+            <footer id="rodape" class="grid-item">                     
+                <address>
+                    <p id="rod">&copy; 2023 Caio Ventura. All rights reserved.</p>
+                </address>
+            </footer>
+
+
+
+        </div>  <!-- Fim da Grade (grid) -->
+    </body>
+</html>

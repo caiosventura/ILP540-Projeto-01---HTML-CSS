@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Piazzolla:ital,wght@1,200&display=swap" rel="stylesheet">
+        <title>Projeto 01</title>
+    </head>
+
+
+    <body>  <!-- Início do body: corpo principal do site, que contém toda a estrutura + conteúdo.. -->
+        <div class="grid">      <!-- Div utilizada como a grade (grid) na qual os outros elementos estarão contidos. -->
+
+
+
+            <header id="cabecalho" class="grid-item">
+            <!-- Cabeçalho: para incluir informação do título e o logo do nosso site. -->
+            <h1 id="titulo_pag"> Orquestra
+                <img id="logo" src="imagens/violino3.png" alt="Violino">
+            </h1>
+            </header>
+
+
+
+
+
+            <nav id="navegacao" class="grid-item">                  <!-- Menu de navegação: possibilita o usuário de navegar pelas páginas do site. -->
+                <ul id="lista_navegacao">    <!-- Lista que compõe os itens do navbar. -->
+                    <li>    <a href="index.html">Home</a>         </li> <!-- Item da lista. -->
+                    <li>    <a href="madeiras.html">Madeiras</a>  </li> <!-- Item da lista. -->
+                    <li>    <a href="metais.html">Metais</a>      </li> <!-- Item da lista. -->
+                    <li>    <a href="cordas.html">Cordas</a>                </li> <!-- Item da lista. -->
+                    <li>    <a href="#">Contato</a>    </li> <!-- Item da lista. -->
+                </ul>
+            </nav>
+
+
+
+
+
+            <section id="principal" class="grid-item">                  <!-- Seção principal do site: contém os artigos principais. -->
+                <article> <!-- Artigo que contém conteúdo. -->
+                    <div id="contato">
+                        <form id="clientes" name="clientes" method="post" action="mailto:seu@email.com">
+                            <fieldset><legend><h1> CONTATO </h1></legend>
+                                <p class="linha">
+                                    <label class="rotulo" for="user">Nome: </label>
+                                    <input class="insercao" type="text" placeholder="Nome" id="user" name="user" size="40" maxlength="50" autofocus="autofocus" required="required"/>
+                                </p>
+                                
+                                
+                                <p class="linha">
+                                    <label class="rotulo" for="e-mail">E-mail:</label>
+                                    <input class="insercao" type="email" placeholder="E-mail" id="email" name="email" size="40" required="required"/>
+                                </p>
+
+                                <p class="linha">
+                                    <label class="rotulo" for="conhecer">Como nos conheceu?</label>
+                                    <select id="conhecer" name="conhecer">
+                                        <option value="f" selected>Facebook</option>
+                                        <option value="i">Instagram</option>
+                                        <option value="e">Fórum</option>
+                                        <option value="a">Amigo</option>
+                                        <option value="o">Outros</option>
+                                    </select>
+                                </p>
+
+                                <p class="linha">
+                                    <label class="rotulo">Indicaria o site para algum amigo?</label>
+                                    <p class="linha">
+                                        <label for="sim">Sim:</label>
+                                        <input  type="radio" id="sim" name="enq" value="s" checked />
+                                        <label  for="nao">Não:</label>
+                                        <input  type="radio" id="nao" name="enq" value="n" />
+                                    </p>
+                                </p>
+
+                                
+                            </fieldset>
+                                
+                                <fieldset> <legend>Feedback</legend>
+                                <p class="linha">
+                                    <input class="insercao" type="text" placeholder="Assunto" id="subject" name="subject" size="40" maxlength="50"/>
+                                </p>
+
+                                <p class="linha">
+                                    <textarea id="comentario" placeholder="Mensagem" name="comentario" rows="4" cols="40" maxlength="250"></textarea>
+                                </p>
+
+                                <p class="linha">
+                                    <input class="insercao" type ="submit" value="enviar"/>
+                                </p>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </article>
+            </section>
+
+
+
+            <aside id="sidebar" class="grid-item">      <!-- Menu aside: contém links para navegar pelos artigos. -->
+                <ul id="menu_aside" class="menu_nav">   <!-- Menu aside em formato de lista. -->
+                    <li>Artigos Mais lidos</li>     <!-- Titulo da Lista -->
+                    <li>A Sala São Paulo</li>            <!-- Item da lista. -->
+                    <li class="artigo">Artigo 1</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 2</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 3</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 4</li>     <!-- Item da lista. -->
+                    <li>Orquestra OSESP</li>             <!-- Item da lista. -->
+                    <li class="artigo">Artigo 1</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 2</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 3</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 4</li>     <!-- Item da lista. -->
+                </ul>
+            </aside>
+
+
+
+
+
+            <footer id="rodape" class="grid-item">                     
+                <address>
+                    <p id="rod">&copy; 2023 Caio Ventura. All rights reserved.</p>
+                </address>
+            </footer>
+
+
+
+        </div>  <!-- Fim da Grade (grid) -->
+    </body>
+</html>

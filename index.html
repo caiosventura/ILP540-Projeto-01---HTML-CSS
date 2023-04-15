@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/outros.css">
+	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Piazzolla:ital,wght@1,200&display=swap"
+	 rel="stylesheet">
+	<title>Projeto 01</title>
+</head>
+
+
+<body>
+	<!-- Início do body: corpo principal do site, que contém toda a estrutura + conteúdo.. -->
+	<div class="grid">
+		<!-- Div utilizada como a grade (grid) na qual os outros elementos estarão contidos. -->
+
+
+
+		<header id="cabecalho" class="grid-item">
+			<!-- Cabeçalho: para incluir informação do título e o logo do nosso site. -->
+			<h1 id="titulo_pag"> Orquestra
+				<img id="logo" src="imagens/violino3.png" alt="Violino">
+                </h1>
+            </header>
+
+
+
+
+
+            <nav id="navegacao" class="grid-item">                  <!-- Menu de navegação: possibilita o usuário de navegar pelas páginas do site. -->
+                <ul id="lista_navegacao">    <!-- Lista que compõe os itens do navbar. -->
+                    <li>    <a href="#">Home</a>                  </li> <!-- Item da lista. -->
+                    <li>    <a href="madeiras.html">Madeiras</a>    </li> <!-- Item da lista. -->
+                    <li>    <a href="metais.html">Metais</a>        </li> <!-- Item da lista. -->
+                    <li>    <a href="cordas.html">Cordas</a>      </li> <!-- Item da lista. -->
+                    <li>    <a href="contato.html">Contato</a>    </li> <!-- Item da lista. -->
+                </ul>
+            </nav>
+
+
+
+
+            
+            <section id="principal" class="grid-item">                  <!-- Seção principal do site: contém os artigos principais. -->
+              <article> <!-- Artigo que contém conteúdo. -->
+                  <h2 id="principal_bemvindo" class="artigo1_conteudo">Bem Vindo!</h2>
+                  <p id="frase_inicial">Aqui você irá conhecer mais sobre os principais instrumentos de uma orquestra. </p> <!-- Parágrafo. -->  
+                  
+                  
+              </article>
+              <article>
+                <table id="tabela_principal">
+                    <tr class="linha_tab_p">
+                        <td class="titulo_tab_p">A Orquestra</td>
+                        <td class="cont_tab_p">A orquestra é um conjunto de músicos instrumentistas. O termo tem origem na Grécia Antiga, quando era usado para designar um espaço. No teatro grego, mais exatamente aquele onde ficavam os músicos. As primeiras orquestras apareceram no século XVI na Europa, e seus repertórios, instrumentos e formatos mudaram com o passar dos anos. Hoje em dia, as orquestras, com músicos que tocam instrumentos de cordas, madeiras, metais e percussão, além de teclados e harpas, em combinações diversas, interpretam obras de todos os tempos. Desde o século XX, porém, compositores vêm introduzindo outras sonoridades no conjunto e suas criações incluem instrumentos como por exemplo violão, saxofone, piano elétrico e mesmo gravações de sons da natureza.</td>
+                    </tr>
+                    <tr class="linha_tab_p">
+                        <td class="titulo_tab_p"></td>
+                        <td class="cont_tab_p" > <!-br>
+                        <figure id="bsd_desktop">
+                            <img class="outros_imgs" src="imagens/orquestra_img.jpg" alt="Imagem da Orquestra">
+                            <!--figcaption class="legenda">Área de trabalho do Free BSD.</figcaption-->
+                        </figure>
+                        </td>
+                    <tr class="linha_tab_p">
+                        <td class="titulo_tab_p">Música Erudita ou Clássica?</td>
+                        <td class="cont_tab_p">Na verdade, nenhum dos dois termos é apropriado. Para apreciar a música tocada pela Osesp, não é necessário qualquer grau de erudição. O termo clássico refere-se a um período da história da música, o Classicismo (do qual Mozart é um dos mais destacados representantes), que veio depois do Barroco (de Johann Sebastian Bach) e antes do Romantismo (de Gustav Mahler). Entretanto, este é um termo popularizado, que em vários idiomas indica a música de concerto, como sinfonias, sonatas, óperas, etc. Outros termos usados são música sinfônica e música de concerto.</td>
+                    </tr>
+                </table>   
+              </article>
+            </section>
+            
+
+
+
+
+            <aside id="sidebar" class="grid-item">                      <!-- Menu aside: contém links para navegar pelos artigos. -->
+                <ul id="menu_aside" class="menu_nav">   <!-- Menu aside em formato de lista. -->
+                    <li>Artigos Mais lidos</li>     <!-- Titulo da Lista -->
+                    <li>A Sala São Paulo</li>            <!-- Item da lista. -->
+                    <li class="artigo">Artigo 1</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 2</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 3</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 4</li>     <!-- Item da lista. -->
+                    <li>Orquestra OSESP</li>             <!-- Item da lista. -->
+                    <li class="artigo">Artigo 1</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 2</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 3</li>     <!-- Item da lista. -->
+                    <li class="artigo">Artigo 4</li>     <!-- Item da lista. -->
+                </ul>
+            </aside>
+
+
+
+
+            <footer id="rodape" class="grid-item">                     
+                <address>
+                    <p id="rod">&copy; 2023 Caio Ventura. All rights reserved.</p>
+                </address>
+            </footer>
+
+
+
+        </div>  <!-- Fim da Grade (grid) -->
+    </body>
+</html>

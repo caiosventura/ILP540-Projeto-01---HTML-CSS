@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* Início da estilização da página */
+
+html, body{                 /* Contempla todo o conteúdo. */
+    font-size: 18px;
+    background-color: #585858;
+    background-image: linear-gradient(25deg, #585858 0%, #000000 100%);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.grid{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+/*==================================================================================================================*/
+
+/* CABECALHO */
+#cabecalho{
+    margin: 0 auto;
+    height: 150px;
+    padding: 20px;
+    background: linear-gradient(47deg,rgba(19,21,22,1) 0%, rgba(68,63,61,1) 63%, rgb(115 106 101) 100%);
+    color:rgb(235 136 15);
+    
+}   #cabecalho #logo{
+        float: right;
+        min-width: 1%;
+        max-width: 95px;
+        float: right;
+        margin: 0 auto;
+}
+
+/*==================================================================================================================*/
+
+/* MENU DE NAVEGAÇÃO (NAV-BAR) */
+#navegacao {
+    background-color: rgb(235,136,15);
+}     
+#navegacao ul{                          /* Abrange a Lista que compõe os itens do navbar */
+    list-style-type: none;
+    justify-content: flex-end;
+} 
+#navegacao li{                          /* Abrange os itens dessa Lista */
+    text-align: center;
+    background-color: rgb(54,54,54);
+    padding: 4px;
+    margin: 0.5px;
+    transition: background-color 0.7s;
+    }   #navegacao li:hover{ background-color: rgb(255, 255, 255, 0.50);   }  /* Efeito de preenchimento ao passar o mouse por cima */
+
+#navegacao a{                           /* Abrange os hiperlinks contidos em cada item */
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;  
+    text-shadow: none;  
+    color: white;
+}
+
+/*==================================================================================================================*/
+
+/* PRINCIPAL */
+
+.grid #principal{
+    background-color: rgb(79,79,79);
+}
+
+.grid #principal > article{ /* Abrange o artigo principal */
+    text-align: justify;
+    padding: 25px;
+    color:lightgrey;
+} 
+
+article > a{                /* Abrange o hiperlink contido no artigo */
+    display: inline;
+}
+
+#principal_bemvindo{
+	font-family: 'Piazzolla', serif;
+	font-size: 35px;
+	margin: 15px 0 25px 0;
+	text-align:center;
+	text-shadow:1px 1.5px gray
+}
+
+#frase_inicial{
+    text-align:center;
+}
+
+#tabela_principal{
+  text-align: justify;
+  color: rgb(232, 230, 227);
+  margin: 0 auto;
+  background-color: rgb(49, 53, 55);
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+}
+#tabela_principal td{
+  border: 1.5px solid #1c1d1d;
+  padding: 5px 15px 5px 10px;
+}
+.titulo_tab_p{
+  text-align: center;
+  width: 10%;
+  vertical-align: middle;
+}
+#iframe_p{
+  display: block;
+  width: 300px;
+  max-width: 75%;
+  height: 25vh;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.iframe_q{
+  display: block;
+  /*width: 300px;*/
+  max-width: 100%;
+  /*height: auto;*/
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/*==================================================================================================================*/
+/* SIDEBAR */
+#sidebar   {
+    background-color: rgb(54,54,54);
+} #sidebar ul li{
+  color: white;  
+  list-style: none;
+} #sidebar .artigo{
+    text-indent: 25px;
+}
+
+/*==================================================================================================================*/
+/* RODAPE */
+.grid aside, #rodape{
+    padding-left: 0.5em;
+}
+#rodape{
+    padding: 25px;
+    background: linear-gradient(47deg,rgba(19,21,22,1) 0%, rgba(68,63,61,1) 63%, rgb(115,106,101) 100%);
+    border: solid 1px rgb(235,136,15);
+    text-align: center;
+}
+
+#rodape table{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+} #rodape td{
+	display: inline-block;
+    min-width: 95%;
+    height: auto;
+    border: solid 2px rgb(235,136,15);
+    background: rgb(54,54,54);
+    text-align: center;
+}   #rodape a{
+      text-decoration: none;
+      color: white;    
+      display:block; 
+      padding:10px;
+      
+} address{
+  color: white;  
+
+}
+
