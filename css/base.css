@@ -106,7 +106,7 @@ html, body{                 /* Contempla todo o conteúdo. */
 #navegacao a{                           /* Abrange os hiperlinks contidos em cada item */
     text-decoration: none;
     display: block;
-    text-transform: uppercase;  
+    /*text-transform: uppercase;*/
     text-shadow: none;  
     color: white;
 }
